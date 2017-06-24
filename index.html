@@ -13,6 +13,7 @@
         crossorigin="anonymous">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
         crossorigin="anonymous"></script>
+    <script src="https://rawgithub.com/darkskyapp/skycons/master/skycons.js"></script>
     <script src="weatherfetch.js"></script>
     <title>Weather</title>
 </head>
@@ -21,7 +22,18 @@
     <br><br>
     <div class="container">
         <div class="row">
-            <div class="col-md-6 col-md-offset-3">
+            <div class="col-md-8 col-md-offset-2">
+                <div class="jumbotron" id="jumbotron">
+                    <ul class="list-group">
+                        <li class="list-group-item" id="isp"></li>
+                        <li class="list-group-item" id="place"></li>
+                    </ul>
+                </div>
+                <br><br>
+                <center>
+                    <canvas id="weatherIcon" width="128" height="128"></canvas>
+                </center>
+                <br><br>
                 <ul class="list-group" id="listWeather">
                     <center>
                         <li class="list-group-item list-group-item-success" id="skyData"></li>
